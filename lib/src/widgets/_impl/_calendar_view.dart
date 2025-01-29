@@ -365,6 +365,8 @@ class _CalendarViewState extends State<_CalendarView> {
                         : _localizations.nextMonthTooltip,
                     onPressed: _isDisplayingLastMonth ? null : _handleNextMonth,
                   ),
+                if (widget.config.centerAlignModePicker != true) const Spacer(),
+
               ],
             ),
           ),
